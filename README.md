@@ -50,7 +50,14 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.cargo/env
 ```
 
-### 4. Clone and Build
+### 4. Install C Toolchain
+
+```bash
+sudo apt update
+sudo apt install -y build-essential
+```
+
+### 5. Clone and Build
 
 ```bash
 git clone https://github.com/arighosh05/rabitq-kernel.git
