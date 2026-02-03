@@ -56,9 +56,6 @@ source ~/.cargo/env
 git clone https://github.com/arighosh05/rabitq-kernel.git
 cd rabitq-kernel
 
-# Verify AVX-512 VPOPCNTDQ support
-lscpu | grep -i avx512
-
 # Build and run benchmarks (use 8 threads for best results)
 RAYON_NUM_THREADS=8 RUSTFLAGS="-C target-cpu=native" cargo bench
 ```
