@@ -1,0 +1,27 @@
+[package]
+name = "rabitq"
+version = "1.0.0"
+edition = "2021"
+description = "RaBitQ: Fast approximate nearest neighbor search using binary quantization"
+license = "MIT"
+
+[dependencies]
+rayon = "1.10"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+rand = "0.8"
+
+[[bench]]
+name = "benchmark"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+
+[profile.bench]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
