@@ -1,6 +1,8 @@
 # RaBitQ Kernel
 
-High-performance distance estimation kernel for [RaBitQ](https://github.com/gaoj0017/RaBitQ) binary quantization.
+High-performance distance estimation kernel for [RaBitQ](https://github.com/gaoj0017/RaBitQ) binary quantization. 
+
+[https://aritra.io/kernel.html](https://aritra.io/kernel.html)
 
 ## Performance
 
